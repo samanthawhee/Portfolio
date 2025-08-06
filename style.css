@@ -364,7 +364,7 @@ form button:hover {
         grid-template-columns: 1fr;
     }
     .NavButton {
-        gap: 5%;
+        gap: 2%;
     }
     #HomeGrid {
         grid-template-columns: 1fr;
@@ -379,9 +379,6 @@ form button:hover {
     }
     .Portfolio img {
         margin: 0;
-    }
-    .SocialMediaButton i {
-        font-size: 100%;
     }
     .GetInTouch button {
         width: 60%;
