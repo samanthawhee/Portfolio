@@ -13,12 +13,10 @@ body {
 
 footer {
     text-align: right;
-    /*border: 1px solid #0a277d;*/
 }
 
 section {
     margin: 5% 0;
-    /*border: 1px solid #0a277d;*/
 }
 
 h1, h2, h3, h4 {
@@ -61,7 +59,7 @@ p {
         transform: translateY(0) scale(1);
     }
     50% {
-        transform: translateY(-10px) scale(1.1);
+        transform: translateY(-10%) scale(1.1);
     }
     100% {
         transform: translateY(0) scale(1);
@@ -75,7 +73,7 @@ p {
 /*----------IconStyle-------------*/
 .IconStyle_1 {
     color: #6366f1;
-    margin: 10px 0 10px 0;
+    margin: 10% 0 5% 0;
 }
 
 .IconStyle_2_1 {
@@ -92,7 +90,7 @@ p {
     width: 6%;
     height: 6%;
     padding: 6%;
-    border-radius: 8px;
+    border-radius: 8%;
     text-align: center;
     background: #131b35;
     box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.4);
@@ -131,7 +129,7 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 20%;
 }
 
 .NavButton button {
@@ -202,7 +200,7 @@ p {
     background: #6366f1;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 1em;
     cursor: pointer;
     margin: 2% 0 10% 0;
     transition: transform 0.5s ease;
@@ -218,13 +216,14 @@ p {
 #Skills {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 20px;
+    gap: 3%;
 }
 
 .TagGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    column-gap: 3%;
+    row-gap: 30%;
     margin: 4% 0;
 }
 .HashTag {
@@ -232,7 +231,7 @@ p {
     font-size: 75%;
     color: #a2a8b0;
     background: #21293B;
-    border-radius: 12px;
+    border-radius: 8em;
     padding: 0.5em 1em;
 }
 
@@ -242,28 +241,6 @@ p {
     gap: 5%;
 }
 
-#ProductManagement, #Development {
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    border-radius: 8px;
-    background: #131b35;
-    flex-grow: 1;
-    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.5);
-}
-
-.SkillsIcons {
-    display: inline-block;
-    color: #6366f1;
-    width: 5%;
-    height: 5%;
-    padding: 5%;
-    border-radius: 8px;
-    text-align: center;
-    background: #131b35;
-    box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.5);
-}
-
 /*------------Portfolio-----------*/
 
 .Portfolio {
@@ -271,14 +248,14 @@ p {
     grid-template-columns: 5fr 4fr;
     padding: 5%;
     margin: 2% 0;
-    border-radius: 8px;
+    border-radius: 1em;
     background: #131b35;
     box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
 }
 
 .Portfolio img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 1em;
     margin: 0 0 0 20px;
     transition: transform 0.9s ease;
 }
@@ -305,7 +282,7 @@ p {
 .Tittle_GithubLink {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3%;
     margin-bottom: 1em;
 }
 
@@ -331,10 +308,9 @@ form label, input, textarea {
 form input, textarea {
     width: 100%;
     padding: 1em;
-    margin-bottom: 1em;
     border: none;
     background: #21293B;
-    border-radius: 5px;
+    border-radius: 1em;
     box-sizing: border-box;
 }
 
@@ -349,14 +325,106 @@ form button {
     background: #6366f1;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 1em;
     cursor: pointer;
 }
 
 form button:hover {
     background: #6a91bd;
 }
+/*--------Responsive Design-------*/
+@media (max-width: 600px) {
+    body {
+        margin: 2% 10%;
+    }
+    h1, h2, h3, h4 {
+        color: white;
+        font-size: 80%;
+        margin: 1% 0;
+        padding: 0;
+    }
+    p {
+        margin: 5% 0;
+        padding: 0;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    footer {
+        font-size: 70%;
+        text-align: right;
+        margin-top: 25%;
+    }
+    section {
+        margin: 5% 0;
+    }
+    .Intro {
+        font-size: 200%;
+    }
+    .NavbarGrid {
+        grid-template-columns: 1fr;
+    }
+    .NavButton {
+        gap: 5%;
+    }
+    #HomeGrid {
+        grid-template-columns: 1fr;
+        margin-top:10%;
+        gap: 10%;
+    }
+    #Home h1 {
+        font-size: 150%;
+    }
+    .ProfilePic {
+        display: none;
+    }
+    .Portfolio img {
+        margin: 0;
+    }
+    .SocialMediaButton i {
+        font-size: 100%;
+    }
+    .GetInTouch button {
+        width: 60%;
+        padding: 1em 2em;
+        margin: 2% 0 10% 0;
+        transition: transform 0.5s ease;
+    }
+    .GetInTouch button:hover {
+        background: #6a91bd;
+        transform: scale(1.01);
+    }
+    #Skills {
+        grid-template-columns: 1fr;
+    }
+    .TagGrid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3%;
+        row-gap: 30%;
+        margin: 4% 0;
+    }
+    .HashTag {
+        font-size: 50%;
+    }
+    .Portfolio {
+        grid-template-columns: 1fr;
+        margin: 5% 0;
+    }
+    #ContactMain {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    form button {
+        width: 60%;
+    }
+}
 
+@media (min-width: 601px) and (max-width: 900px) {
+
+}
+
+@media (min-width: 901px) {
+
+}
 /*------------Font----------------*/
 .lato-thin {
     font-family: "Lato", serif;
