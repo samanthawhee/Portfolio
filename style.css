@@ -1,0 +1,419 @@
+/*------------General-------------*/
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 2% 20%;
+    padding: 0;
+    background: #0f162b;
+    font-family: "Lato", serif;
+}
+
+footer {
+    text-align: right;
+    /*border: 1px solid #0a277d;*/
+}
+
+section {
+    margin: 5% 0;
+    /*border: 1px solid #0a277d;*/
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    margin: 2% 0;
+    padding: 0;
+}
+
+p {
+    color: #a2a8b0;
+    margin: 2% 0;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 130%;
+}
+
+.Intro span {
+    display: inline-block;
+    cursor: default;
+    animation: none;
+    transition: color 0.3s ease;
+}
+
+.Intro span:hover {
+    animation: hover-bounce 0.7s ease forwards;
+    color: #6366f1;
+}
+
+@keyframes hover-bounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.PurpleDot {
+    color: #6366f1;
+}
+
+/*----------IconStyle-------------*/
+.IconStyle_1 {
+    color: #6366f1;
+    margin: 10px 0 10px 0;
+}
+
+.IconStyle_2_1 {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 6%;
+    margin: 10% 0;
+}
+
+.IconStyle_2_2 {
+    display: inline-block;
+    color: #6366f1;
+    width: 6%;
+    height: 6%;
+    padding: 6%;
+    border-radius: 8px;
+    text-align: center;
+    background: #131b35;
+    box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.4);
+}
+
+/*----SocialMediaBottomStyle------*/
+.SocialMediaButton a {
+    text-decoration: none;
+}
+
+.SocialMediaButton i {
+    font-size: 170%;
+}
+
+.SocialMediaButton button {
+    padding: 0 3% 0 0;
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.SocialMediaButton button:hover {
+    color: #6366f1;
+    transform: scale(1.3);
+}
+
+/*------------NavBar--------------*/
+.NavbarGrid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.NavButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.NavButton button {
+    background: none;
+    border: none;
+    color: #a2a8b0;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.NavButton button:hover {
+    color: #6366f1;
+    transform: scale(1.12);
+}
+
+/*------------ProfilePic----------*/
+.ProfilePic {
+    position: relative;
+    width: 100px; /* Set your desired size */
+    height: 100px; /* or auto if you want proportional height */
+    overflow: hidden;
+}
+
+.ProfilePic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* keep aspect ratio by cropping or adjust */
+    object-fit: cover; /* cover or contain depending on your needs */
+    transition: opacity 0.5s ease;
+}
+
+.DefaultPic {
+    opacity: 1;
+    z-index: 1;
+}
+
+.HoveredPic {
+    opacity: 0;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.ProfilePic:hover .HoveredPic {
+    opacity: 1;
+}
+
+.ProfilePic:hover .DefaultPic {
+    opacity: 0;
+}
+
+/*------------Home----------------*/
+
+#HomeGrid {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    margin-top:20%;
+  }
+
+#Home h1 {
+    font-size: 300%;
+}
+
+.GetInTouch button {
+    width: 20%;
+    padding: 1em 2em;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 2% 0 10% 0;
+    transition: transform 0.5s ease;
+}
+
+.GetInTouch button:hover {
+    background: #6a91bd;
+    transform: scale(1.01);
+}
+
+/*------------Skills--------------*/
+
+#Skills {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+}
+
+.TagGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 4% 0;
+}
+.HashTag {
+    text-align: center;
+    font-size: 75%;
+    color: #a2a8b0;
+    background: #21293B;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+}
+
+#SkillDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#ProductManagement, #Development {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border-radius: 8px;
+    background: #131b35;
+    flex-grow: 1;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.5);
+}
+
+.SkillsIcons {
+    display: inline-block;
+    color: #6366f1;
+    width: 5%;
+    height: 5%;
+    padding: 5%;
+    border-radius: 8px;
+    text-align: center;
+    background: #131b35;
+    box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.5);
+}
+
+/*------------Portfolio-----------*/
+
+.Portfolio {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    padding: 5%;
+    margin: 2% 0;
+    border-radius: 8px;
+    background: #131b35;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
+}
+
+.Portfolio img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 0 0 20px;
+    transition: transform 0.9s ease;
+}
+
+.Portfolio img:hover {
+    transform: scale(1.02);
+}
+
+.Portfolio button i {
+    font-size: 130%;
+}
+
+.Portfolio button {
+    background: none;
+    border: none;
+    color: #a2a8b0;
+    cursor: pointer;
+}
+
+.Portfolio button:hover {
+    color: #6366f1;
+}
+
+.Tittle_GithubLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+/*------------Contact-------------*/
+
+#ContactMain {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 5%;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label, input, textarea {
+    display: block;
+    margin-bottom: 1em;
+    color: #a2a8b0;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    background: #21293B;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 12em;
+    resize: none;
+}
+
+form button {
+    width: 40%;
+    padding: 1em 1em;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #6a91bd;
+}
+
+/*------------Font----------------*/
+.lato-thin {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: italic;
+}
