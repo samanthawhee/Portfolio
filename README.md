@@ -11,5 +11,5 @@
 ### Wireframe & prototype
 | Wireframe | prototype |
 |----------|----------|
-| <img src="https://github.com/samanthawhee/Portfolio/blob/master/Readme_iamge/Portfolio_wireframe.png" width="300"/> | <img src="https://github.com/samanthawhee/Portfolio/blob/master/Readme_iamge/Figma_UIUX.png" width="300"/> |
+| <img src="https://github.com/samanthawhee/Portfolio/blob/master/Readme_iamge/Wireframe.png" width="300"/> | <img src="https://github.com/samanthawhee/Portfolio/blob/master/Readme_iamge/Figma_UIUX.png" width="300"/> |
 
