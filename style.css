@@ -27,8 +27,7 @@ h1, h2, h3, h4 {
 
 p {
     color: #a2a8b0;
-    margin: 2% 0;
-    padding: 0;
+    margin: 0;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -78,7 +77,7 @@ p {
 /*----------IconStyle-------------*/
 .IconStyle_1 {
     color: #6366f1;
-    margin: 10% 0 5% 0;
+    margin: 0 0 5% 0;
 }
 
 .IconStyle_2_1 {
@@ -199,6 +198,11 @@ p {
     font-size: 300%;
 }
 
+
+#Home p {
+    margin: 2% 0;
+}
+
 .GetInTouch button {
     width: 20%;
     padding: 1em 2em;
@@ -228,7 +232,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3%;
-    row-gap: 1.5em;
+    row-gap: 0.7em;
     margin: 4% 0;
 }
 .HashTag {
@@ -261,7 +265,7 @@ p {
 .Portfolio img {
     width: 100%;
     border-radius: 1em;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 1em;
     transition: transform 0.9s ease;
 }
 
@@ -326,6 +330,7 @@ form textarea {
 
 form button {
     width: 40%;
+    margin: 0.5em 0 0 0;
     padding: 1em 1em;
     background: #6366f1;
     color: white;
@@ -344,18 +349,15 @@ form button:hover {
     }
     h1, h2, h3, h4 {
         color: white;
-        font-size: 80%;
+        font-size: 60%;
         margin: 1% 0;
         padding: 0;
     }
     p {
-        margin: 5% 0;
-        padding: 0;
-        text-align: justify;
-        text-justify: inter-word;
+        font-size: 70%;
     }
     footer {
-        font-size: 70%;
+        font-size: 50%;
         text-align: right;
         margin-top: 25%;
     }
@@ -383,15 +385,11 @@ form button:hover {
         display: none;
     }
     .Portfolio img {
-        margin: 0;
+        margin: 5% 0 0 0;
     }
     .GetInTouch button {
         width: 60%;
         margin: 2% 0 0 0;
-    }
-    .GetInTouch button:hover {
-        background: #6a91bd;
-        transform: scale(1.01);
     }
     #Skills {
         grid-template-columns: 1fr;
@@ -404,7 +402,6 @@ form button:hover {
         margin: 5% 0;
     }
     #ContactMain {
-        display: grid;
         grid-template-columns: 1fr;
     }
     form button {
@@ -413,7 +410,59 @@ form button:hover {
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-
+    body {
+        margin: 2% 10%;
+    }
+    h1, h2, h3, h4 {
+        color: white;
+        font-size: 90%;
+        margin: 1% 0;
+        padding: 0;
+    }
+    p {
+        font-size: 90%;
+    }
+    footer {
+        font-size: 70%;
+        text-align: right;
+        margin-top: 5%;
+    }
+    section {
+        margin: 5% 0;
+    }
+    .Intro {
+        font-size: 200%;
+    }
+    .NavbarGrid {
+        grid-template-columns: 1fr;
+    }
+    .NavButton {
+        gap: 2%;
+    }
+    #HomeGrid {
+        grid-template-columns: 6fr 1fr;
+        margin-top:10%;
+        gap: 10%;
+    }
+    #Home h1 {
+        font-size: 250%;
+    }
+    .Portfolio img {
+        margin: 0 0 0 1em;
+    }
+    .GetInTouch button {
+        width: 30%;
+        margin: 2% 0 0 0;
+    }
+    .HashTag {
+        font-size: 70%;
+    }
+    .IconStyle_2_1 p {
+        font-size: 80%;
+    }
+    form button {
+        width: 60%;
+    }
 }
 
 @media (min-width: 901px) {
