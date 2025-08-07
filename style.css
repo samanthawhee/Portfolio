@@ -70,6 +70,11 @@ p {
     color: #6366f1;
 }
 
+/*-- Skill bottom margin gets  ignored due to the margin of TagGrid--*/
+#Skills {
+    padding-bottom: 4%;
+}
+
 /*----------IconStyle-------------*/
 .IconStyle_1 {
     color: #6366f1;
@@ -223,7 +228,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3%;
-    row-gap: 30%;
+    row-gap: 1.5em;
     margin: 4% 0;
 }
 .HashTag {
@@ -382,9 +387,7 @@ form button:hover {
     }
     .GetInTouch button {
         width: 60%;
-        padding: 1em 2em;
-        margin: 2% 0 10% 0;
-        transition: transform 0.5s ease;
+        margin: 2% 0 0 0;
     }
     .GetInTouch button:hover {
         background: #6a91bd;
@@ -392,12 +395,6 @@ form button:hover {
     }
     #Skills {
         grid-template-columns: 1fr;
-    }
-    .TagGrid {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 3%;
-        row-gap: 30%;
-        margin: 4% 0;
     }
     .HashTag {
         font-size: 50%;
