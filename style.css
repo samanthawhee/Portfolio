@@ -252,7 +252,7 @@ p {
 
 /*------------Portfolio-----------*/
 
-.Portfolio {
+.GroupProject {
     display: grid;
     grid-template-columns: 5fr 4fr;
     padding: 5%;
@@ -262,37 +262,80 @@ p {
     box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
 }
 
-.Portfolio img {
+.GroupProject > :nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 0 1em;
+}
+
+.GroupProject img {
     width: 100%;
     border-radius: 1em;
-    margin: 0 0 0 1em;
     transition: transform 0.9s ease;
 }
 
-.Portfolio img:hover {
+.GroupProject img:hover {
     transform: scale(1.02);
 }
 
-.Portfolio button i {
+.GroupProjectButton button i {
     font-size: 130%;
 }
 
-.Portfolio button {
+.GroupProjectButton button {
     background: none;
     border: none;
     color: #a2a8b0;
     cursor: pointer;
 }
 
-.Portfolio button:hover {
+.GroupProjectButton button:hover {
     color: #6366f1;
 }
 
-.Tittle_GithubLink {
+.GroupProject_GithubLink {
     display: flex;
     align-items: center;
     gap: 3%;
     margin-bottom: 1em;
+}
+.IndividualProject_GithubLink {
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    align-items: center;
+}
+.IndividualProject_GithubLink > :nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0.4em 0 0;
+}
+.Tittle_Tag {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3%;
+    row-gap: 0.7em;
+    margin: 4% 0;
+}
+
+.IndividualProjectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5% 2%;
+}
+
+.IndividualProject {
+    padding: 5%;
+    border-radius: 1em;
+    background: #131b35;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
+}
+
+.IndividualProject:hover {
+    border-radius: 1em;
+    background: #131b35;
+    box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.4);
 }
 
 /*------------Contact-------------*/
@@ -384,9 +427,6 @@ form button:hover {
     .ProfilePic {
         display: none;
     }
-    .Portfolio img {
-        margin: 5% 0 0 0;
-    }
     .GetInTouch button {
         width: 60%;
         margin: 2% 0 0 0;
@@ -397,9 +437,19 @@ form button:hover {
     .HashTag {
         font-size: 50%;
     }
-    .Portfolio {
+    .GroupProject {
         grid-template-columns: 1fr;
         margin: 5% 0;
+    }
+    .GroupProject > :nth-child(2) {
+        margin: 1em 0 0 0;
+    }
+    .IndividualProjectGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+    }
+    #T27 {
+        margin: 0 0 3em 0;
     }
     #ContactMain {
         grid-template-columns: 1fr;
@@ -447,7 +497,7 @@ form button:hover {
     #Home h1 {
         font-size: 250%;
     }
-    .Portfolio img {
+    .GroupProject img {
         margin: 0 0 0 1em;
     }
     .GetInTouch button {
