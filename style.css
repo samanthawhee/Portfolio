@@ -302,7 +302,7 @@ p {
 }
 .IndividualProject_GithubLink {
     display: grid;
-    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-columns: 4fr 2fr 3fr;
     align-items: center;
 }
 .IndividualProject_GithubLink > :nth-child(2) {
