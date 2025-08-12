@@ -128,6 +128,26 @@
     </div>
 
     <section id="Project" class="GroupProjectButton">
+        <!--
+        <div class="GroupProject" data-aos="zoom-out-up">
+            <div>
+                <div>
+                    <h3>Customer Segmentation</h3>
+                </div>
+
+                <div class="TagGrid">
+                    <span class="HashTag">Python</span>
+                    <span class="HashTag">JavaScript React</span>
+                    <span class="HashTag">MySQL</span>
+                </div>
+
+                <p>Independently designed and developed an end-to-end customer segmentation system, turning raw data into actionable insights using K-Means clustering. Created dashboards to visualize clusters, enabling targeted marketing and personalized recommendations.</p>
+            </div>
+            <div>
+                <img src="image/InProgress.png" alt="InProgress">
+            </div>
+        </div>
+        -->
         <div class="GroupProject" data-aos="zoom-out-up">
             <div>
                 <div>
@@ -281,35 +301,13 @@
     <footer>
         <p>@2025 Samantha Huang. All Rights Reserved.</p>
     </footer>
-    <!-- Scripts -->
-    <script src="script.js"></script>
+
     <!-- Form -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        emailjs.init("pMxSihy3OHx2E_pOC");
-    </script>
-
-    <!-- Form Submission -->
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
-
-            emailjs.sendForm('samanthawhee', 'template_hpzo3j2', this)
-                .then(function() {
-                    alert('Message sent successfully!');
-                }, function(error) {
-                    alert('Failed to send message. Error: ' + JSON.stringify(error));
-                });
-        });
-    </script>
-
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: false, // animation happens only once
-            duration: 1000 // duration in milliseconds
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
 </body>
 </html>
