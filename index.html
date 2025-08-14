@@ -44,10 +44,10 @@
     <section class="NavbarGrid" data-aos="fade-down">
         <div></div>
         <nav class="NavButton">
-            <a href="#Home"><button>HOME</button></a>
-            <a href="#Skills"><button>SKILLS</button></a>
-            <a href="#Project"><button>PORTFOLIO</button></a>
-            <a href="#Contact"><button>CONTACT</button></a>
+            <a href="#Home"><button id="HomeNavButton">HOME</button></a>
+            <a href="#Skills"><button id="SkillNavButton">SKILLS</button></a>
+            <a href="#Project"><button id="ProjectNavButton">PORTFOLIO</button></a>
+            <a href="#Contact"><button id="ContentNavButton">CONTACT</button></a>
         </nav>
     </section>
 
@@ -57,13 +57,13 @@
             <div>
                 <div class="SocialMediaButton">
                     <a href="https://www.linkedin.com/in/samantha-huang-273768146/" target="_blank">
-                        <button><i class="fab fa-linkedin"></i></button>
+                        <button id="LinkedInButton"><i class="fab fa-linkedin"></i></button>
                     </a>
                     <a href="https://github.com/samanthawhee" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button id="GitHubButton"><i class="fab fa-github"></i></button>
                     </a>
                     <a href="mailto:samanthahuang1105@gmail.com">
-                        <button><i class="fas fa-envelope"></i></button>
+                        <button id="EmailButton"><i class="fas fa-envelope"></i></button>
                     </a>
                 </div>
                 <h1>Hi! I'm Samantha<span style="color: #6366f1;">.</span></h1>
@@ -76,7 +76,7 @@
         </div>
         <p>I’ve built products in collaboration with cross-functional teams, driving measurable impact. Currently, I’m pursuing a Master’s in Computer Science at the University of Bristol.</p>
         <div class="GetInTouch">
-            <a href="#Contact"><button>GET IN TOUCH</button></a>
+            <a href="#Contact"><button id="GetInTouchButton">GET IN TOUCH</button></a>
         </div>
     </section>
 
@@ -172,7 +172,7 @@
                 <div class="GroupProject_GithubLink">
                     <h3>Learn To Fly</h3>
                     <a href="https://github.com/UoB-COMSM0166/2025-group-21" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button  id="LearnToFlyButton"><i class="fab fa-github"></i></button>
                     </a>
                 </div>
 
@@ -194,7 +194,7 @@
                 <div class="IndividualProject_GithubLink">
                     <h3>STAG</h3>
                     <a href="https://github.com/samanthawhee/STAG.git" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button id="StagButton"><i class="fab fa-github"></i></button>
                     </a>
                     <div class="Tittle_Tag">
                         <span class="HashTag">JAVA</span>
@@ -208,7 +208,7 @@
                 <div class="IndividualProject_GithubLink">
                     <h3>SQL-like DB</h3>
                     <a href="https://github.com/samanthawhee/cw-db.git" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button id="DBButton"><i class="fab fa-github"></i></button>
                     </a>
                     <div class="Tittle_Tag">
                         <span class="HashTag">JAVA</span>
@@ -226,7 +226,7 @@
                 <div class="IndividualProject_GithubLink">
                     <h3>Match Drop</h3>
                     <a href="https://github.com/samanthawhee/Match-Drop" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button id="MatchDropButton"><i class="fab fa-github"></i></button>
                     </a>
                     <div class="Tittle_Tag">
                         <span class="HashTag">C</span>
@@ -240,7 +240,7 @@
                 <div class="IndividualProject_GithubLink">
                     <h3>T27</h3>
                     <a href="https://github.com/samanthawhee/T27.git" target="_blank">
-                        <button><i class="fab fa-github"></i></button>
+                        <button id="T27Button"><i class="fab fa-github"></i></button>
                     </a>
                     <div class="Tittle_Tag">
                         <span class="HashTag">C</span>
@@ -293,7 +293,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="your message..." required></textarea>
 
-                <button>SEND MESSAGE</button>
+                <button id="SentMessageButton">SEND MESSAGE</button>
             </form>
         </div>
     </section>
@@ -308,6 +308,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="track.js"></script>
 
 </body>
 </html>
