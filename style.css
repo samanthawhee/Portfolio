@@ -7,7 +7,7 @@ html {
 body {
     margin: 2% 20%;
     padding: 0;
-    background: #0f162b;
+    background: #F3EDE3;
     font-family: "Lato", serif;
 }
 
@@ -20,13 +20,13 @@ section {
 }
 
 h1, h2, h3, h4 {
-    color: white;
+    color: #18442A;
     margin: 2% 0;
     padding: 0;
 }
 
 p {
-    color: #a2a8b0;
+    color: #45644A;
     margin: 0;
     text-align: justify;
     text-justify: inter-word;
@@ -50,7 +50,7 @@ p {
 
 .Intro span:hover {
     animation: hover-bounce 0.7s ease forwards;
-    color: #6366f1;
+    color: #18442A;
 }
 
 @keyframes hover-bounce {
@@ -66,7 +66,7 @@ p {
 }
 
 .PurpleDot {
-    color: #6366f1;
+    color: #45644A;
 }
 
 /*-- Skill bottom margin gets  ignored due to the margin of TagGrid--*/
@@ -76,7 +76,7 @@ p {
 
 /*----------IconStyle-------------*/
 .IconStyle_1 {
-    color: #6366f1;
+    color: #18442A;
     margin: 0 0 5% 0;
 }
 
@@ -90,13 +90,13 @@ p {
 
 .IconStyle_2_2 {
     display: inline-block;
-    color: #6366f1;
+    color: #18442A;
     width: 6%;
     height: 6%;
     padding: 6%;
     border-radius: 8%;
     text-align: center;
-    background: #131b35;
+    background: #E4DBC4;
     box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.4);
 }
 
@@ -113,14 +113,14 @@ p {
     padding: 0 3% 0 0;
     background: none;
     border: none;
-    color: #ffffff;
+    color: #45644A;
     outline: none;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
 
 .SocialMediaButton button:hover {
-    color: #6366f1;
+    color: #18442A;
     transform: scale(1.3);
 }
 
@@ -139,13 +139,13 @@ p {
 .NavButton button {
     background: none;
     border: none;
-    color: #a2a8b0;
+    color: #45644A;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
 
 .NavButton button:hover {
-    color: #6366f1;
+    color: #18442A;
     transform: scale(1.12);
 }
 
@@ -182,9 +182,10 @@ p {
     opacity: 1;
 }
 
-.ProfilePic:hover .DefaultPic {
+/* .ProfilePic:hover .DefaultPic {
     opacity: 0;
 }
+*/
 
 /*------------Home----------------*/
 
@@ -206,8 +207,8 @@ p {
 .GetInTouch button {
     width: 20%;
     padding: 1em 2em;
-    background: #6366f1;
-    color: white;
+    background: #18442A;
+    color: #F3EDE3;
     border: none;
     border-radius: 1em;
     cursor: pointer;
@@ -216,7 +217,7 @@ p {
 }
 
 .GetInTouch button:hover {
-    background: #6a91bd;
+    background: #45644A;
     transform: scale(1.01);
 }
 
@@ -238,8 +239,8 @@ p {
 .HashTag {
     text-align: center;
     font-size: 75%;
-    color: #a2a8b0;
-    background: #21293B;
+    color: #45644A;
+    background: #E4DBC4;
     border-radius: 8em;
     padding: 0.5em 1em;
 }
@@ -251,6 +252,10 @@ p {
 }
 
 /*------------Portfolio-----------*/
+.GroupProject .HashTag {
+    font-size: 60%;
+    background: #F3EDE3;
+}
 
 .GroupProject {
     display: grid;
@@ -258,7 +263,7 @@ p {
     padding: 5%;
     margin: 2% 0;
     border-radius: 1em;
-    background: #131b35;
+    background: #E4DBC4;
     box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
 }
 
@@ -286,12 +291,12 @@ p {
 .GroupProjectButton button {
     background: none;
     border: none;
-    color: #a2a8b0;
+    color: #45644A;
     cursor: pointer;
 }
 
 .GroupProjectButton button:hover {
-    color: #6366f1;
+    color: #18442A;
 }
 
 .GroupProject_GithubLink {
@@ -325,16 +330,22 @@ p {
     gap: 5% 2%;
 }
 
+.IndividualProject .HashTag {
+    font-size: 60%;
+    background: #F3EDE3;
+
+}
+
 .IndividualProject {
     padding: 5%;
     border-radius: 1em;
-    background: #131b35;
+    background: #E4DBC4;
     box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
 }
 
 .IndividualProject:hover {
     border-radius: 1em;
-    background: #131b35;
+    background: #E4DBC4;
     box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.4);
 }
 
@@ -354,14 +365,14 @@ form {
 form label, input, textarea {
     display: block;
     margin-bottom: 1em;
-    color: #a2a8b0;
+    color: #45644A;
 }
 
 form input, textarea {
     width: 100%;
     padding: 1em;
     border: none;
-    background: #21293B;
+    background: #E4DBC4;
     border-radius: 1em;
     box-sizing: border-box;
 }
@@ -375,15 +386,15 @@ form button {
     width: 40%;
     margin: 0.5em 0 0 0;
     padding: 1em 1em;
-    background: #6366f1;
-    color: white;
+    background: #18442A;
+    color: #F3EDE3;
     border: none;
     border-radius: 1em;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #6a91bd;
+    background: #45644A;
 }
 /*--------Responsive Design-------*/
 @media (max-width: 600px) {
@@ -391,7 +402,7 @@ form button:hover {
         margin: 2% 10%;
     }
     h1, h2, h3, h4 {
-        color: white;
+        color: #18442A;
         font-size: 60%;
         margin: 1% 0;
         padding: 0;
@@ -464,7 +475,7 @@ form button:hover {
         margin: 2% 10%;
     }
     h1, h2, h3, h4 {
-        color: white;
+        color: #18442A;
         font-size: 90%;
         margin: 1% 0;
         padding: 0;
