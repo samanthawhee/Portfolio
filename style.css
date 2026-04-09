@@ -81,21 +81,6 @@ a:visited {
     color: black;          /* after clicking */
 }
 
-a, button {
-    -webkit-tap-highlight-color: transparent;
-}
-
-a:active,
-button:active {
-    background: transparent !important;
-    color: black !important;
-}
-
-button {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
 /*------------NavBar--------------*/
 .NavbarGrid {
     display: grid;
@@ -110,6 +95,7 @@ button {
 
 .NavButton button {
     font-family: "Playfair Display", serif;
+    color: black;
     background: none;
     border: none;
     cursor: pointer;
@@ -119,13 +105,6 @@ button {
 .NavButton button:hover {
     color: #3c3c3c;
     transform: scale(1.12);
-}
-
-.NavButton a,
-.NavButton a:visited,
-.NavButton a:link {
-    color: black !important;
-    text-decoration: none;
 }
 
 .HomeNav {
