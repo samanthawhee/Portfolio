@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Google Analytics tag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4H01127S6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M4H01127S6', { page_path: window.location.pathname });
+        </script>
+
+
+        <title>Samantha Huang</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google SEO Tage-->
+        <meta name="description" content="Official site of Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+        <meta property="og:title" content="Samantha Huang" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+        <meta property="og:image" content="https://www.samanthawhee.com/image/linkedin-preview.png" />
+        <meta property="og:url" content="https://www.samanthawhee.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Gooole Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+        <!-- StyleSheet -->
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+
+        <!-- NavBar ------->
+        <section class="NavbarGrid" data-aos="fade-down">
+            <div>
+                <a href="../index.html">
+                    <button id="Home" class="HomeNav">SAMANTHA HUANG</button>
+                </a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <nav id="nav-menu" class="NavButton">
+                <a href="../products/index.html">
+                    <button id="Products">PRODUCTS</button>
+                </a>
+                <a href="../case/index.html">
+                    <button id="Case">CASE STUDY</button>
+                </a>
+                <a href="../programming/index.html">
+                    <button id="Programming">PROGRAMMING</button>
+                </a>
+                <a href="../about/index.html">
+                    <button id="About" style="font-weight: bold;">ABOUT</button>
+                </a>
+                <a href="../contact/index.html">
+                    <button id="Contact">CONTACT</button>
+                </a>
+            </nav>
+
+        </section>
+
+        <!-- Introduction --------->
+        <div class="Intro">
+            <h1>
+                <span>I</span><span>n</span><span>t</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span><span class="PurpleDot">.</span>
+            </h1>
+        </div>
+
+        <div class="aboutMe">
+            <div>
+                <p data-aos="fade-down-right">
+                    I’m a Product Manager with 4+ years of experience building and scaling products across EdTech, workplace 
+                    platforms, and shared mobility. I specialise in product strategy, user-centred design, and data-driven 
+                    decision-making.<br><br>
+
+                    I’ve led the end-to-end development of data analytics platforms and digital products, delivering measurable 
+                    impact on engagement, conversion, revenue, and data quality. I also drive go-to-market strategies, working 
+                    cross-functionally to launch and scale products successfully.<br><br>
+
+                    I’m particularly passionate about building products from scratch. One example is 
+                    a <a href="../programming/index.html"> <span style="font-weight: bold;">dataset segmentation platform</span></a> 
+                    I created, which automates analytics, visualises insights, and enables targeted marketing to support faster, 
+                    data-driven decisions. <br><br>
+
+                    Outside of work, I enjoy exploring the world and staying curious about new ideas, perspectives, and experiences.</p>
+            </div>
+
+            <div>
+
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="hiking">Hiking</button>
+                    <button class="tab-btn" data-tab="books">Book Shelf</button>
+                    <button class="tab-btn" data-tab="running">Running</button>
+                    <button class="tab-btn" data-tab="tableTennis">Table Tennis</button>
+                </div>
+
+                <div class="tab-content">
+
+                    <div id="hiking" class="tab-panel active">
+                        <!-- Hiking Spots --------->
+                        <div>
+
+                            <p> I’ve organised group hikes for 10–20 participants, sharing the joy of outdoor adventures.</p>
+
+                            <div id="map" data-aos="fade-right"></div>
+                        </div>
+                    </div>
+
+                    <div id="books" class="tab-panel">
+                        <!-- Book Shelf --------->
+                        <div>
+
+                            <p>I enjoy reading both fiction and non-fiction. I love how books spark creativity while expanding knowledge.</p>
+                            
+                            <div class="bookShelf">
+                                <img src="../image/books/hipppo.jpg" alt="hipppo">
+                                <img src="../image/books/factfulness.jpg" alt="factfulness">
+                                <img src="../image/books/rivers.jpg" alt="rivers">
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div id="running" class="tab-panel">
+                        <!-- Running --------->
+                        <div>
+
+                            <p>I’ve participated in 10k running events since 2015. Although I missed 2025 due to my studies, I hope to join one this year.</p>
+                            <div class="carousel">
+
+                                <div class="carousel-window">
+                                    <div class="carousel-track">
+                                        <img src="../image/running/running_2024.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2023.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2022.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2021.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2020.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2019.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2018.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2017.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2016.jpeg" class="carousel-slide">
+                                        <img src="../image/running/running_2015.jpeg" class="carousel-slide">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tableTennis" class="tab-panel">
+                        <!-- Table Tennis --------->
+                        <div>
+                            
+                            <p>In London, I joined a local club and later represented my university team during my MSc studies.</p>
+                        
+                            <div class="tebleTennis">
+                                <img src="../image/TableTennis/club.jpeg" alt="club">
+                                <img src="../image/TableTennis/uni.jpeg" alt="uni">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>@2026 Samantha Huang. All Rights Reserved.</p>
+        </footer>
+
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Scripts -->
+        <script src="../tab.js"></script>
+        <script src="../script.js"></script>
+        <script src="../track.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="../slider.js"></script>
+        </script><script src="../map.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1000,   
+                easing: 'ease-out-cubic',
+                once: true       
+            });
+        </script>
+    </body>
+</html>

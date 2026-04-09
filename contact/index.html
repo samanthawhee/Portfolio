@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Google Analytics tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4H01127S6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M4H01127S6', { page_path: window.location.pathname });
+    </script>
+
+
+    <title>Samantha Huang</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google SEO Tage-->
+    <meta name="description" content="Official site of Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:title" content="Samantha Huang" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:image" content="https://www.samanthawhee.com/image/linkedin-preview.png" />
+    <meta property="og:url" content="https://www.samanthawhee.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Gooole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <!-- NavBar ------->
+    <section class="NavbarGrid" data-aos="fade-down">
+        <div>
+            <a href="../index.html">
+                <button id="Home" class="HomeNav">SAMANTHA HUANG</button>
+            </a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav-menu" class="NavButton">
+            <a href="../products/index.html">
+                <button id="Products">PRODUCTS</button>
+            </a>
+            <a href="../case/index.html">
+                <button id="Case">CASE STUDY</button>
+            </a>
+            <a href="../programming/index.html">
+                <button id="Programming">PROGRAMMING</button>
+            </a>
+            <a href="../about/index.html">
+                <button id="About">ABOUT</button>
+            </a>
+            <a href="../contact/index.html">
+                <button id="Contact" style="font-weight: bold;">CONTACT</button>
+            </a>
+        </nav>
+    </section>
+
+    <!-- Contact --------->
+    <div class="Intro">
+        <h1>
+            <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span class="PurpleDot">.</span>
+        </h1>
+    </div>
+
+    <section id="Contact" >
+        <div id="ContactMain">
+            <div id="ContactInfo" data-aos="fade-right">
+                <p>I’d love to hear from you! Whether you’re looking to collaborate on a project, explore career opportunities, or just have a chat, feel free to reach out. Let’s build something amazing together!</p>
+                <div class="IconStyle_2_1">
+                    <span class="IconStyle_2_2" ><i class="fas fa-envelope"></i></span>
+                    <div>
+                        <p>Email</p>
+                        <p>samanthahuang1105@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="IconStyle_2_1">
+                    <span class="IconStyle_2_2" ><i class="fab fa-linkedin"></i></span>
+                    <div>
+                        <p>LinkedIn</p>
+                        <p>@samantha-huang-273768146</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" data-aos="fade-left">
+                <label for="name">Email</label>
+                <input type="text" id ="name" name="email" placeholder="email here" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="subject here" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="your message..." required></textarea>
+
+                <button id="SentMessageButton">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>@2026 Samantha Huang. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Form -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../track.js"></script>
+</body>
+</html>

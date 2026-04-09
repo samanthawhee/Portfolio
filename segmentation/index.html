@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Google Analytics tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4H01127S6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M4H01127S6', { page_path: window.location.pathname });
+    </script>
+
+
+    <title>Samantha Huang</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google SEO Tage-->
+    <meta name="description" content="Official site of Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:title" content="Samantha Huang" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:image" content="https://www.samanthawhee.com/image/linkedin-preview.png" />
+    <meta property="og:url" content="https://www.samanthawhee.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Gooole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <!-- NavBar ------->
+    <section class="NavbarGrid" data-aos="fade-down">
+        <div>
+            <a href="../index.html">
+                <button id="Home" class="HomeNav">SAMANTHA HUANG</button>
+            </a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav-menu" class="NavButton">
+            <a href="../products/index.html">
+                <button id="Products">PRODUCTS</button>
+            </a>
+            <a href="../case/index.html">
+                <button id="Case">CASE STUDY</button>
+            </a>
+            <a href="../programming/index.html">
+                <button id="Programming" style="font-weight: bold;">PROGRAMMING</button>
+            </a>
+            <a href="../about/index.html">
+                <button id="About">ABOUT</button>
+            </a>
+            <a href="../contact/index.html">
+                <button id="Contact">CONTACT</button>
+            </a>
+        </nav>
+    </section>
+
+    <!-- Products --------->
+    <div class="Intro">
+        <h1>
+            <span>C</span><span>u</span><span>s</span><span>t</span><span>o</span><span>m</span><span>e</span><span>r</span>&nbsp;
+            <span>S</span><span>e</span><span>g</span><span>m</span><span>e</span><span>n</span><span>t</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span class="PurpleDot">.</span>
+        </h1>
+    </div>
+
+    <section class="productDetail">
+
+        <video autoplay muted loop playsinline>
+            <source src="../image/segmentation/pc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Background</h3>
+
+        <p>With four years of experience as a Product Manager across the concept, growth, and mature stages of the product 
+            lifecycle, I have developed a strong understanding of how data influences business direction, product strategy, 
+            and marketing performance. After my MSc in Computer Science, I wanted to deepen this perspective by moving beyond 
+            decision-making into building data systems myself. This project was inspired by a recurring challenge I observed: 
+            teams often lack clear and actionable customer segmentation, leading to slow decisions, subjective discussions, 
+            and inefficient marketing efforts driven by trial and error.
+        </p><br>
+
+        <h3>Product Vision</h3>
+
+        <p>This project is an end-to-end customer segmentation platform designed to demonstrate how teams can use data to 
+            better understand users and deliver targeted experiences. By segmenting users and matching them with relevant 
+            products, the system enables more precise and efficient marketing simulations. The intention was not just to 
+            build a technical demo, but to create a scalable product concept that can be adapted across industries and 
+            support data-driven decision-making.
+        </p><br>
+        
+        <h3>Product Design</h3>
+
+        <p>I approached the project as a full product lifecycle, starting with workflow design to map interactions between 
+            backend and frontend systems. This helped define the scope and prioritise key requirements early on. Wireframing 
+            the interface allowed me to focus on how users consume and interpret data, especially what information is most 
+            valuable for decision-making.
+        </p><br>
+
+        <p>A key challenge was ensuring that machine learning outputs are understandable and trustworthy for non-technical 
+            users. Rather than focusing on explaining the algorithm itself, I designed features that emphasise transparency. 
+            For example, cluster overviews explain why users are grouped together across multiple dimensions, while 
+            validation tools allow users to inspect how individual data points are assigned. This reflects a core product 
+            principle: data is only valuable if users trust it.
+        </p><br>
+
+        <img src="../image/segmentation/product.jpg" alt="product">
+        
+        <h3>Technical Stack</h3>
+
+        <p>To strengthen my technical foundation after my MSc, I built the system end-to-end from scratch. The backend 
+            is developed in Python using Flask with RESTful APIs to handle data processing and communication. The frontend 
+            is built with React, using a component-based architecture to ensure reusability and scalability. PostgreSQL is 
+            used as the relational database to manage structured data efficiently. The overall system is designed to be
+             lightweight while maintaining flexibility for future feature expansion.
+        </p><br>
+        
+        <h3>Data Design and Generation</h3>
+
+        <p>To simulate real-world scenarios, I designed both user and product datasets based on financial industry 
+            structures. Instead of using existing datasets, I generated synthetic data to have full control over attributes 
+            and system behaviour. Data is reset after each run to ensure consistent performance and avoid degradation in 
+            future demonstrations. These decisions reflect a balance between realism, performance, and maintainability.
+        </p><br>
+
+        <img src="../image/segmentation/data.png" alt="data">
+        
+        <h3>Data Segmentation and Product Matching</h3>
+
+        <p>The core of the system is a segmentation engine powered by K-Means clustering, exposed through APIs. Users 
+            are grouped based on multiple attributes, and these segmentation results are then used by a product matching 
+            engine to calculate relevance scores between users and products. This demonstrates how data can directly inform 
+            product recommendations and marketing strategies in a practical and scalable way.
+        </p><br>
+        
+        <h3>Marketing Outreach</h3>
+
+        <p>The project also includes a demonstration of how marketing teams can activate segmentation results. It simulates 
+            targeted outreach based on user groups, providing a foundation for more advanced features such as email 
+            customisation, messaging channels, or integration with CRM platforms. While simplified, this component highlights 
+            how data insights can be translated into real business actions.
+        </p><br>
+        
+        <h3>Project Management</h3>
+
+        <p>Throughout the project, I maintained detailed documentation and daily work logs using Confluence, and published 
+            key materials on GitHub. This approach ensured traceability, clarity in development progress, and ease of knowledge 
+            transfer. I treated the project with production-level discipline, reflecting my working style as a product manager.
+        </p><br>
+
+        <img src="../image/segmentation/log.png" alt="log">
+        
+        <h3>Deployment</h3>
+
+        <p>The system is deployed on a remote server with clear separation between development and production environments. 
+            This allows for local testing during development while maintaining a stable deployed version. Due to the use of 
+            a cost-efficient hosting solution, the application may experience slower initial load times, which reflects 
+            real-world trade-offs between performance and infrastructure cost. The system is designed with scalability in mind, 
+            although infrastructure expansion is not currently prioritised.
+        </p><br>
+        
+        <h3>Impact and Takeaways</h3>
+
+        <p>This project represents my ability to take full ownership of a product, from problem definition and design to 
+            development and deployment. By combining my product management experience with the technical skills developed 
+            during my MSc in Computer Science, I was able to build a complete data product from the ground up. It also 
+            reinforced my belief that data is not just a supporting function, but a core product capability. When designed 
+            effectively, data systems can reduce uncertainty, improve decision-making, and drive meaningful product growth 
+            across industries.
+        </p><br>
+        
+
+
+        
+          
+        
+    </section>
+
+        
+
+    </section>
+    
+
+    <footer>
+        <p>@2026 Samantha Huang. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Form -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../track.js"></script>
+</body>
+</html>

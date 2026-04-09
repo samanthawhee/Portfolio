@@ -1,28 +1,36 @@
-
-// Initialize EmailJS
-emailjs.init("pMxSihy3OHx2E_pOC");
-
-// Form submission handler
 document.addEventListener('DOMContentLoaded', () => {
+
+    // ✅ NAV TOGGLE
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("nav-menu");
+
+    if (toggle && menu) {
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    }
+
+    // ✅ EMAIL
     const form = document.getElementById('contact-form');
-    if (form) {
+    if (form && typeof emailjs !== "undefined") {
+
+        emailjs.init("pMxSihy3OHx2E_pOC");
+
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
+            e.preventDefault();
 
             emailjs.sendForm('samanthawhee', 'template_hpzo3j2', this)
-                .then(() => {
-                    alert('Message sent successfully!');
-                }, (error) => {
-                    alert('Failed to send message. Error: ' + JSON.stringify(error));
-                });
+                .then(() => alert('Message sent successfully!'))
+                .catch((error) => alert('Failed: ' + JSON.stringify(error)));
         });
     }
 
-    // Initialize AOS
-    if (AOS) {
+    // ✅ AOS
+    if (typeof AOS !== "undefined") {
         AOS.init({
-            once: false,    // animation happens only once
-            duration: 1000, // duration in milliseconds
+            once: false,
+            duration: 1000,
         });
     }
+
 });

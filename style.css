@@ -1,4 +1,9 @@
 /*------------General-------------*/
+
+html, body {
+    height: 100%;
+}
+
 html {
 
     scroll-behavior: smooth;
@@ -7,12 +12,19 @@ html {
 body {
     margin: 2% 20%;
     padding: 0;
-    background: #F3EDE3;
+    background: white;
     font-family: "Lato", serif;
+
+    display: flex;           
+    flex-direction: column;    
+    min-height: 100vh;          
 }
 
 footer {
-    text-align: right;
+    margin-top: auto;        
+    margin-bottom: 5%;        
+    display: flex;
+    justify-content: center;
 }
 
 section {
@@ -20,13 +32,15 @@ section {
 }
 
 h1, h2, h3, h4 {
-    color: #18442A;
+    text-align: justify;
     margin: 2% 0;
     padding: 0;
 }
+h1, h3{
+    font-family: "Playfair Display", serif;
+}
 
-p {
-    color: #45644A;
+p, ul {
     margin: 0;
     text-align: justify;
     text-justify: inter-word;
@@ -45,12 +59,10 @@ p {
     display: inline-block;
     cursor: default;
     animation: none;
-    transition: color 0.3s ease;
 }
 
 .Intro span:hover {
     animation: hover-bounce 0.7s ease forwards;
-    color: #18442A;
 }
 
 @keyframes hover-bounce {
@@ -65,18 +77,52 @@ p {
     }
 }
 
-.PurpleDot {
-    color: #45644A;
+a:visited {
+    color: black;          /* after clicking */
 }
 
-/*-- Skill bottom margin gets  ignored due to the margin of TagGrid--*/
-#Skills {
-    padding-bottom: 4%;
+/*------------NavBar--------------*/
+.NavbarGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.NavButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+}
+
+.NavButton button {
+    font-family: "Playfair Display", serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.NavButton button:hover {
+    color: #3c3c3c;
+    transform: scale(1.12);
+}
+
+.HomeNav {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 120%;
+    background: none;
+    border: none;
+    
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
 }
 
 /*----------IconStyle-------------*/
 .IconStyle_1 {
-    color: #18442A;
     margin: 0 0 5% 0;
 }
 
@@ -90,13 +136,13 @@ p {
 
 .IconStyle_2_2 {
     display: inline-block;
-    color: #18442A;
+    color: #3c3c3c;
     width: 6%;
     height: 6%;
     padding: 6%;
     border-radius: 8%;
     text-align: center;
-    background: #E4DBC4;
+    color: #3c3c3c;
     box-shadow: 0 3px 7px 0 rgba(86, 86, 86, 0.4);
 }
 
@@ -113,240 +159,51 @@ p {
     padding: 0 3% 0 0;
     background: none;
     border: none;
-    color: #45644A;
     outline: none;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
 
 .SocialMediaButton button:hover {
-    color: #18442A;
+    color: #3c3c3c;
     transform: scale(1.3);
 }
-
-/*------------NavBar--------------*/
-.NavbarGrid {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
-.NavButton {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20%;
-}
-
-.NavButton button {
-    background: none;
-    border: none;
-    color: #45644A;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-.NavButton button:hover {
-    color: #18442A;
-    transform: scale(1.12);
-}
-
-/*------------ProfilePic----------*/
-.ProfilePic {
-    position: relative;
-    width: 100px; /* Set your desired size */
-    height: 100px; /* or auto if you want proportional height */
-    overflow: hidden;
-}
-
-.ProfilePic img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* keep aspect ratio by cropping or adjust */
-    object-fit: cover; /* cover or contain depending on your needs */
-    transition: opacity 0.5s ease;
-}
-
-.DefaultPic {
-    opacity: 1;
-    z-index: 1;
-}
-
-.HoveredPic {
-    opacity: 0;
-    z-index: 2;
-    border-radius: 50%;
-}
-
-.ProfilePic:hover .HoveredPic {
-    opacity: 1;
-}
-
-/* .ProfilePic:hover .DefaultPic {
-    opacity: 0;
-}
-*/
 
 /*------------Home----------------*/
 
 #HomeGrid {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 4fr 1fr;
     margin-top:20%;
-  }
+}
+#HomeGrid img {
+    width: 100%;
+}
 
-#Home h1 {
+#HomeGrid h1 {
     font-size: 300%;
 }
 
 
-#Home p {
+#HomeGrid p {
     margin: 2% 0;
 }
 
 .GetInTouch button {
     width: 20%;
     padding: 1em 2em;
-    background: #18442A;
-    color: #F3EDE3;
+    background: #000000;;
+    color: white;
     border: none;
     border-radius: 1em;
     cursor: pointer;
-    margin: 2% 0 10% 0;
+    margin: 2% 0 0 0;
     transition: transform 0.5s ease;
 }
 
 .GetInTouch button:hover {
-    background: #45644A;
+    background: #3c3c3c;
     transform: scale(1.01);
-}
-
-/*------------Skills--------------*/
-
-#Skills {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 3%;
-}
-
-.TagGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3%;
-    row-gap: 0.7em;
-    margin: 4% 0;
-}
-.HashTag {
-    text-align: center;
-    font-size: 75%;
-    color: #45644A;
-    background: #E4DBC4;
-    border-radius: 8em;
-    padding: 0.5em 1em;
-}
-
-#SkillDetails {
-    display: flex;
-    justify-content: space-between;
-    gap: 5%;
-}
-
-/*------------Portfolio-----------*/
-.GroupProject .HashTag {
-    font-size: 60%;
-    background: #F3EDE3;
-}
-
-.GroupProject {
-    display: grid;
-    grid-template-columns: 5fr 4fr;
-    padding: 5%;
-    margin: 2% 0;
-    border-radius: 1em;
-    background: #E4DBC4;
-    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
-}
-
-.GroupProject > :nth-child(2) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 0 0 1em;
-}
-
-.GroupProject img {
-    width: 100%;
-    border-radius: 1em;
-    transition: transform 0.9s ease;
-}
-
-.GroupProject img:hover {
-    transform: scale(1.02);
-}
-
-.GroupProjectButton button i {
-    font-size: 130%;
-}
-
-.GroupProjectButton button {
-    background: none;
-    border: none;
-    color: #45644A;
-    cursor: pointer;
-}
-
-.GroupProjectButton button:hover {
-    color: #18442A;
-}
-
-.GroupProject_GithubLink {
-    display: flex;
-    align-items: center;
-    gap: 3%;
-    margin-bottom: 1em;
-}
-.IndividualProject_GithubLink {
-    display: grid;
-    grid-template-columns: 4fr 2fr 3fr;
-    align-items: center;
-}
-.IndividualProject_GithubLink > :nth-child(2) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 0.4em 0 0;
-}
-.Tittle_Tag {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 3%;
-    row-gap: 0.7em;
-    margin: 4% 0;
-}
-
-.IndividualProjectGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5% 2%;
-}
-
-.IndividualProject .HashTag {
-    font-size: 60%;
-    background: #F3EDE3;
-
-}
-
-.IndividualProject {
-    padding: 5%;
-    border-radius: 1em;
-    background: #E4DBC4;
-    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.4);
-}
-
-.IndividualProject:hover {
-    border-radius: 1em;
-    background: #E4DBC4;
-    box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.4);
 }
 
 /*------------Contact-------------*/
@@ -365,19 +222,19 @@ form {
 form label, input, textarea {
     display: block;
     margin-bottom: 1em;
-    color: #45644A;
 }
 
 form input, textarea {
     width: 100%;
     padding: 1em;
     border: none;
-    background: #E4DBC4;
+    background: #3c3c3c;
     border-radius: 1em;
     box-sizing: border-box;
 }
 
 form textarea {
+    color: white;
     height: 12em;
     resize: none;
 }
@@ -386,34 +243,166 @@ form button {
     width: 40%;
     margin: 0.5em 0 0 0;
     padding: 1em 1em;
-    background: #18442A;
-    color: #F3EDE3;
+    color: #3c3c3c;
     border: none;
     border-radius: 1em;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #45644A;
+    background: #4a4a4a;
+    color: white;
 }
+
+/*------------Product-------------*/
+.productRow {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.productSquare {
+    width: 100%;
+    padding: 3%;
+    border: none;
+    margin: 1% 0;
+    border-radius: 1em;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.15);
+}
+
+.productSquare:hover {
+    box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.1);
+}
+
+.productDetail {
+    text-align: left;
+}
+
+.productDetail img, video {
+    width: 60%;      
+    display: block;
+    margin: 0 auto; 
+              
+}
+
+/*------------About---------------*/
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 5% 0;
+}
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 20px 0;
+}
+
+.tab-btn {
+    font-family: "Playfair Display", serif;
+    background: none;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+#map {
+    height: 20em;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#map img {
+    border-radius: 10px;
+}
+
+.bookShelf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bookShelf img {    
+    height: 15em;      
+    width: 100%;     
+    display: block;       
+    object-fit: cover;   
+    border-radius: 10px; 
+}
+
+/*----------About/ Running Slide-------------*/
+
+.carousel {
+  position: relative;  
+  margin: auto;
+  margin-top: 20px;
+}
+
+.carousel-window {
+  overflow: hidden;     
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+}
+
+.carousel-slide {   
+  width: 50%;
+  height: 15em; 
+  object-fit: cover;
+  margin: 0 10px;      
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/*----------About/ Table Tennis-------------*/
+.tebleTennis {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tebleTennis img {
+    height: 15em;   
+    width: 100%;                 
+    display: block;       
+    object-fit: cover;   
+    border-radius: 10px; 
+}
+    
 /*--------Responsive Design-------*/
 @media (max-width: 600px) {
     body {
         margin: 2% 10%;
     }
     h1, h2, h3, h4 {
-        color: #18442A;
-        font-size: 60%;
-        margin: 1% 0;
+        text-align: center;
+        font-size: 100%;
+        margin: 5% 0;
         padding: 0;
     }
-    p {
+    p, ul{
         font-size: 70%;
-    }
-    footer {
-        font-size: 50%;
-        text-align: right;
-        margin-top: 25%;
     }
     section {
         margin: 5% 0;
@@ -422,120 +411,229 @@ form button:hover {
         font-size: 200%;
     }
     .NavbarGrid {
-        grid-template-columns: 1fr;
+        position: relative;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        z-index: 9999;
+    }
+    .menu-toggle {
+        display: block;
     }
     .NavButton {
-        gap: 2%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 10000;
+
+        background: white;
+        padding: 1em;
+        gap: 0.5em;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        min-width: 180px;
+    }
+    .NavButton.active {
+        display: flex;
+    }
+    .NavButton a button {
+        width: 100%;
+        text-align: left;
     }
     #HomeGrid {
         grid-template-columns: 1fr;
         margin-top:10%;
-        gap: 10%;
+        gap: 5%;
     }
-    #Home h1 {
-        font-size: 150%;
+    #HomeGrid h1 {
+        font-size: 200%;
     }
-    .ProfilePic {
-        display: none;
+    #HomeGrid img {
+        width: 50%;
+        display: block;
+        margin: 0 auto 10%;
+    }
+    .SocialMediaButton {
+        text-align: center;
     }
     .GetInTouch button {
         width: 60%;
-        margin: 2% 0 0 0;
+        margin: 10% auto 0 auto;
+        display: block;
     }
-    #Skills {
-        grid-template-columns: 1fr;
-    }
-    .HashTag {
-        font-size: 50%;
-    }
-    .GroupProject {
-        grid-template-columns: 1fr;
-        margin: 5% 0;
-    }
-    .GroupProject > :nth-child(2) {
-        margin: 1em 0 0 0;
-    }
-    .IndividualProjectGrid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3%;
-    }
-    #T27 {
-        margin: 0 0 3em 0;
+    .GetInTouch a {
+    text-decoration: none;
     }
     #ContactMain {
         grid-template-columns: 1fr;
+        margin-bottom: 3rem;
     }
+    form {
+    margin-bottom: 2rem;
+}
     form button {
         width: 60%;
     }
+    .productSquare {
+        padding: 5%;
+        margin: 3% 0;
+    }
+    .productSquare h3, .productSquare p {
+        text-align: left;
+    }
+    .aboutMe {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .tab-buttons {
+        justify-content: center;
+        gap: 0px;
+    }
+    .tab-btn {
+        padding: 8px;
+        font-size: 0.7em;
+    }
+    .tab-btn.active {
+        border-radius: 7px;
+    }
+    #map {
+        height: 15em;
+    }
+    .bookShelf {
+        gap: 10px;
+    }
+    .bookShelf img {    
+        height: 10em;          
+    }
+    .bookShelf :first-child {
+        display: none;
+    }
+    .carousel-slide {   
+        width: 50%;
+        height: 10em; 
+        margin: 0 5px;
+    }
+    .tebleTennis {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tebleTennis img {
+        height: 10em;                
+    }
+    .tebleTennis :first-child {
+        display: none;
+    }
 }
-
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1100px) {
     body {
         margin: 2% 10%;
     }
     h1, h2, h3, h4 {
-        color: #18442A;
-        font-size: 90%;
-        margin: 1% 0;
+        font-size: 100%;
+        margin: 3% 0;
         padding: 0;
     }
-    p {
+    p, ul{
         font-size: 90%;
-    }
-    footer {
-        font-size: 70%;
-        text-align: right;
-        margin-top: 5%;
-    }
-    section {
-        margin: 5% 0;
     }
     .Intro {
         font-size: 200%;
     }
     .NavbarGrid {
-        grid-template-columns: 1fr;
+        position: relative;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        z-index: 9999;
+    }
+    .menu-toggle {
+        display: block;
     }
     .NavButton {
-        gap: 2%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 10000;
+
+        background: white;
+        padding: 1em;
+        gap: 0.5em;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        min-width: 180px;
+    }
+    .NavButton.active {
+        display: flex;
+    }
+
+    .NavButton a button {
+        width: 100%;
+        text-align: left;
     }
     #HomeGrid {
-        grid-template-columns: 6fr 1fr;
+        grid-template-columns: 3fr 1fr;
         margin-top:10%;
-        gap: 10%;
+        gap: 5%;
     }
-    #Home h1 {
-        font-size: 250%;
-    }
-    .GroupProject img {
-        margin: 0 0 0 1em;
+    #HomeGrid img {
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
     .GetInTouch button {
         width: 30%;
-        margin: 2% 0 0 0;
-    }
-    .HashTag {
-        font-size: 70%;
+        margin: 5% 0 0 0;
     }
     .IconStyle_2_1 p {
         font-size: 80%;
     }
-    .IndividualProjectGrid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2%;
-    }
-    #T27 {
-        margin: 0 0 2em 0;
-    }
     form button {
         width: 60%;
     }
+    .productSquare {
+        padding: 4%;
+        margin: 2% 0;
+    }
+    .productSquare h3, .productSquare p {
+        text-align: left;
+    }
+    .aboutMe {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .tab-buttons {
+        justify-content: center;
+        gap: 0px;
+    }
+    .tab-btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+    .tab-btn.active {
+        border-radius: 7px;
+    }
+    .bookShelf {
+        display: flex;
+        gap: 10px;
+    }
+    .carousel-slide {   
+        width: 30%;
+        height: 15em; 
+    }
+    .tebleTennis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tebleTennis :first-child {
+        display: block;
+    }
 }
 
-@media (min-width: 901px) {
-
-}
 /*------------Font----------------*/
 .lato-thin {
     font-family: "Lato", serif;
