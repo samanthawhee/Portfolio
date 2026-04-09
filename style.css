@@ -286,6 +286,11 @@ form button:hover {
               
 }
 
+.productDetail a:link,
+.productDetail a:visited {
+    color: black;
+}
+
 /*------------About---------------*/
 .aboutMe {
     display: grid;
