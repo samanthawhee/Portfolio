@@ -274,6 +274,10 @@ form button:hover {
     box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.15);
 }
 
+.productSquare button {
+    color: black;
+}
+
 .productSquare:hover {
     box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.1);
 }
@@ -314,6 +318,10 @@ form button:hover {
     border: none;
     font-size: 1em;
     cursor: pointer;
+}
+
+.tab-btn button:hover {
+    color: black;
 }
 
 .tab-btn.active {
