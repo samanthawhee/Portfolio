@@ -81,6 +81,21 @@ a:visited {
     color: black;          /* after clicking */
 }
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:active,
+button:active {
+    background: transparent !important;
+    color: black !important;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 /*------------NavBar--------------*/
 .NavbarGrid {
     display: grid;
