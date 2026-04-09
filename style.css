@@ -106,6 +106,13 @@ a:visited {
     transform: scale(1.12);
 }
 
+.NavButton a,
+.NavButton a:visited,
+.NavButton a:link {
+    color: black !important;
+    text-decoration: none;
+}
+
 .HomeNav {
     font-family: "Playfair Display", serif;
     font-weight: bold;
