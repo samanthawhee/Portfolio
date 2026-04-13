@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Google Analytics tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4H01127S6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M4H01127S6', { page_path: window.location.pathname });
+    </script>
+
+
+    <title>Samantha Huang</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google SEO Tage-->
+    <meta name="description" content="Official site of Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:title" content="Samantha Huang" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Samantha Huang — product manager, engineer and digital builder focused on creating user-first experiences across web and product platforms.">
+    <meta property="og:image" content="https://www.samanthawhee.com/image/linkedin-preview.png" />
+    <meta property="og:url" content="https://www.samanthawhee.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Gooole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <!-- NavBar ------->
+    <section class="NavbarGrid" data-aos="fade-down">
+        <div>
+            <a href="../index.html">
+                <button id="Home" class="HomeNav">SAMANTHA HUANG</button>
+            </a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav-menu" class="NavButton">
+            <a href="../products/index.html">
+                <button id="Products">PRODUCTS</button>
+            </a>
+            <a href="../case/index.html">
+                <button id="Case">CASE STUDY</button>
+            </a>
+            <a href="../programming/index.html">
+                <button id="Programming" style="font-weight: bold;">PROGRAMMING</button>
+            </a>
+            <a href="../about/index.html">
+                <button id="About">ABOUT</button>
+            </a>
+            <a href="../contact/index.html">
+                <button id="Contact">CONTACT</button>
+            </a>
+        </nav>
+    </section>
+
+    <!-- Products --------->
+    <div class="Intro">
+        <h1>
+            <span>A</span><span>I</span>&nbsp;<span>&</span>&nbsp;<span>V</span><span>R</span>&nbsp;
+            <span>L</span><span>e</span><span>a</span><span>r</span><span>n</span><span>i</span><span>n</span><span>g</span>&nbsp;
+            <span>T</span><span>o</span><span>o</span><span>l</span><span class="PurpleDot">.</span>
+        </h1>
+    </div>
+
+    <section class="productDetail">
+
+        <h3>Overview</h3>
+
+        <p>This project explores how AI and virtual reality can reshape language learning into a more immersive and practical experience. Developed in collaboration with 
+            IBM, the platform simulates real-world travel scenarios where users interact with AI-powered characters to practice language through natural conversation. 
+            Positioned within the edutainment space, the product bridges structured education and interactive gameplay, allowing learners to move beyond memorisation and 
+            into real-life communication.
+        </p><br>  
+
+        <h3>Problem Space and Solutions</h3>
+
+        <p>Traditional language learning often creates a gap between knowledge and application. Many learners understand grammar and vocabulary but struggle to use them 
+            in authentic situations. Structured, classroom-based methods tend to focus on accuracy rather than communication, while social pressure can discourage learners 
+            from speaking freely. This combination results in limited practical experience and reduced confidence when using a new language.
+        </p><br> 
+
+        <p>To address these challenges, the product was designed around task-based gameplay within an immersive VR environment. Users follow a narrative, “Where is 
+            My Tour Guide?”, progressing through locations in Paris by interacting with non-playable characters. These interactions are not scripted but dynamic, 
+            allowing users to engage in spontaneous dialogue that reflects real-world communication. By placing learners in a private, simulated environment, the experience 
+            reduces performance anxiety and encourages exploration at their own pace.
+        </p><br> 
+
+        <h3>AI Dialogue Design</h3>
+
+        <p>My primary contribution focused on AI dialogue design and evaluation. I was responsible for the Eiffel Tower scene, which was intentionally designed as a 
+            social setting rather than a transactional one. Unlike scenarios such as booking a hotel or ordering food, this environment encouraged casual, everyday 
+            conversations with both locals and tourists. The goal was to create a space where users could practice natural dialogue while still achieving educational 
+            outcomes. I first brainstormed potential conversational catgories in a mind map, then mapped out the dialogue structure using flowcharts to visualise how 
+            different interactions would unfold based on user input.
+        </p><br> 
+
+        <img src="../image/ai/workflow.png" alt="workflow"><br>
+
+        <p>After designing the conversational flows for four main characters, I collected NPC model assets and implemented the dialogue content using IBM Watsonx Assistant, enabling real-time 
+            voice interaction through speech-to-text and text-to-speech systems.
+        <img src="../image/ai/npc.png" alt="npc"><br>
+
+        <p>The JSON snippet below demonstrates a typical response returned by Watsonx Assistant. </p><br> 
+        <img src="../image/ai/json.png" alt="json">
+
+        <h3>AI Workflow & Testing</h3>
+
+        <p>In addition to designing the dialogue, I structured the AI workflow and testing process. The system included 46 dialogue actions, each with more than 16 
+            possible responses, resulting in over 700 test cases. To improve efficiency, I organised testing by actions rather than by locations, making it easier 
+            to validate and maintain the content. Due to limitations in the platform, such as the absence of version history, I created detailed documentation including
+             action IDs, example phrases, and expected responses. This approach reduced errors and streamlined the testing process across the team.
+        </p><br> 
+
+        <img src="../image/ai/test.png" alt="test">
+
+        <h3>Agile Product Management</h3>
+
+        <p>I also played a key role in managing the Agile workflow. At the beginning of the project, I led the team in defining the MVP and aligning the development 
+            scope with IBM, ensuring a clear and realistic foundation for delivery. Throughout the project, I facilitated weekly sprint reviews where the team demonstrated 
+            progress, discussed challenges, and defined goals for the next iteration. I coordinated communication between team members, our supervisor, and IBM, while 
+            ensuring that both internal and shared documentation remained up to date. This helped maintain alignment across design and development and kept the project 
+            progressing efficiently.
+        </p><br> 
+
+        <img src="../image/ai/project.png" alt="project">
+
+        <h3>Evaluation & Iteration</h3>
+
+        <p>Evaluation was a critical part of the development process. Across three rounds of testing, we identified recurring usability challenges, including 
+            confusion at the starting point, difficulty using VR controllers, and uncertainty around interaction flows. In the third evaluation, I refined the
+             methodology by improving onboarding instructions and using open-ended questions to encourage more detailed feedback. These changes significantly 
+             increased both the quantity and quality of insights, with feedback rising from 26 to 91 responses. After consolidating the data, we identified 22
+              key issues, allowing the team to prioritise the most impactful improvements. This demonstrated that thoughtful evaluation design can generate 
+              meaningful insights even with a small participant group.
+        </p><br> 
+        <img src="../image/ai/evaluation.png" alt="evaluation">
+
+        <h3>Technical Stack</h3>
+
+        <p>The platform was built using IBM Watsonx Assistant for AI dialogue training, supported by speech-to-text and text-to-speech technologies for 
+            voice interaction. Unity was used to create the immersive VR environment, while C++ enabled communication between systems and controlled 
+            interactions within the application.
+        </p><br> 
+
+        <h3>Constraints & Trade-offs</h3>
+
+        <p>Despite its strengths, the project faced several constraints. Due to time limitations, English translation was not fully implemented, which affected
+             usability and limited the quality of feedback during testing. Additionally, restrictions on STT and TTS API usage meant that not all dialogue 
+             scenarios could be thoroughly tested. These trade-offs highlighted the importance of prioritisation in early-stage product development.
+        </p><br> 
+
+        <h3>Reflection & Future Opportunities</h3>
+
+        <p>Overall, this project demonstrates the potential of combining AI and VR to create more engaging and effective language learning experiences. 
+            It highlights how immersive environments can reduce anxiety, how dynamic dialogue can improve practical communication skills, and how iterative
+             evaluation can drive meaningful product improvements. Looking forward, the platform could be expanded with real-time translation, broader language
+              support, and more personalised learning experiences based on user behaviour.
+        </p><br> 
+        
+    </section>
+    
+
+    <footer>
+        <p>@2026 Samantha Huang. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Form -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../track.js"></script>
+</body>
+</html>
