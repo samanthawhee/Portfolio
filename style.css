@@ -1,38 +1,30 @@
 /*------------General-------------*/
-
 html, body {
     height: 100%;
 }
 
-html {
-
-    scroll-behavior: smooth;
-}
-
 body {
-    margin: 2% 20%;
     padding: 0;
     background: white;
     font-family: "Lato", serif;
 
     display: flex;           
-    flex-direction: column;    
-    min-height: 100vh;          
+    flex-direction: column;              
 }
 
 footer {
-    margin-top: auto;        
-    margin-bottom: 5%;        
+    margin-top: auto;                
     display: flex;
+    padding-top: 2%;
+    margin-bottom: 2%;
     justify-content: center;
 }
 
 section {
-    margin: 5% 0;
+    margin-top: 5%;
 }
 
 h1, h2, h3, h4 {
-    text-align: justify;
     margin: 2% 0;
     padding: 0;
 }
@@ -52,7 +44,6 @@ p, ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 130%;
 }
 
 .Intro span {
@@ -84,13 +75,14 @@ a:visited {
 /*------------NavBar--------------*/
 .NavbarGrid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3fr 7fr;
+    margin: 2% 20%;
 }
 .NavButton {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 5%;
+    gap: 3%;
 }
 
 .NavButton button {
@@ -136,6 +128,10 @@ a:visited {
     margin: 10% 0;
 }
 
+.IconStyle_2_1 p {
+    text-align: left;
+}
+
 .IconStyle_2_2 {
     display: inline-block;
     color: #3c3c3c;
@@ -149,6 +145,11 @@ a:visited {
 }
 
 /*----SocialMediaBottomStyle------*/
+.SocialMediaButton {
+    text-align: center;
+    margin-top: 3%;
+    }
+
 .SocialMediaButton a {
     text-decoration: none;
 }
@@ -159,10 +160,10 @@ a:visited {
 
 .SocialMediaButton button {
     color: black;
-    padding: 0 3% 0 0;
     background: none;
     border: none;
     outline: none;
+    gap: 3%;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -176,45 +177,300 @@ a:visited {
 
 #HomeGrid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    margin-top:20%;
+    grid-template-columns: 3fr 1fr;
+    gap: 8%;
+    margin: 0 20%;
 }
 #HomeGrid img {
-    width: 100%;
+    width: 95%;
+    display: block;
+    margin: auto;
 }
 
 #HomeGrid h1 {
-    font-size: 300%;
+    font-size: 250%;
 }
 
+#HomeGrid h3 {
+    text-align: left;
+}
 
 #HomeGrid p {
     margin: 2% 0;
 }
 
-.GetInTouch button {
-    width: 20%;
+#HomeButtonGrid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    margin: 0 20%;
+}
+
+.blackButton button,
+.whiteButton button {
+    width: auto;
+    min-width: 140px;
     padding: 1em 2em;
+    margin-top: 15%;
+}
+
+.blackButton button {
     background: #000000;;
     color: white;
-    border: none;
+    border: black solid 0.08em;
     border-radius: 1em;
     cursor: pointer;
-    margin: 2% 0 0 0;
     transition: transform 0.5s ease;
 }
 
-.GetInTouch button:hover {
+.blackButton button:hover {
     background: #3c3c3c;
     transform: scale(1.01);
 }
 
+.whiteButton button {
+    background: white;
+    color: black;
+    border: gray solid 0.08em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.whiteButton button:hover {
+    background: #3c3c3c;
+    border: #3c3c3c solid 0.08em;
+    color: white;
+    transform: scale(1.01);
+}
+
+/*------------Position-------------*/
+#PositionGrid h1{
+    font-size: 250%;
+    text-align: center;
+    margin: 0 20% 0 20%;
+}
+
+#PositionBlockGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 2rem;
+    margin-top: 5%;
+    margin: 2% 20%;
+}
+
+.PositionBlock {
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 1em;
+    padding: 10%;
+}
+
+.PositionBlock h3 {
+    font-size: 150%;
+}
+
+.PositionBlock h4 {
+    text-align: center;
+}
+
+/*------------OneClass-------------*/
+#OneClassGrid {
+    background-color: rgb(7, 7, 7);
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#OneClassGrid h2, h3,h4, h5 {
+    text-align: center;
+}
+
+#OneClassGrid h2 {
+    font-size: 250%;
+}
+
+#OneClassGrid p{
+    text-align: left;
+    padding: 0 0 3% 30%;
+}
+
+#OneClassGrid ul{
+    padding: 0 0 3% 32%;
+}
+
+#OneClassGrid button {
+    margin: 0 0 5% 30%;
+}
+
+.OneClassDetail {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 3%;
+    margin-top: 5%;
+}
+
+/*------------SuppurtingExperience-------------*/
+
+#SuppurtingGrid {
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+}
+
+#SuppurtingGrid ul {
+    padding: 3% 0 3% 10%;
+    text-align: left;
+    font-size: 80%;
+}
+
+#SuppurtingGrid h2 {
+    margin: 5% 0 0 0;
+    text-align: center;
+}
+
+.SupportingBlockGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 2rem;
+    margin: 5% 20%;
+}
+
+.SupportingBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 251, 251);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 1em;
+    padding: 10%;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.15);
+}
+.SupportingBlock h4 {
+    text-align: left;
+}
+
+.SupportingBlock:hover {
+    box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.2);
+}
+
+.SupportingBlock .whiteButton {
+    text-align: left;
+    margin-top: auto;
+}
+
+/*------------System-------------*/
+
+#SystemGrid {
+    margin: 2% 20% 0 20%;
+}
+#SystemGrid h2 {
+    text-align: center;
+}
+
+#SystemGrid h4 {
+    text-align: left;
+}
+
+#SystemGrid p {
+    text-align: center;
+    margin: 0 5%;
+}
+
+#SystemGrid ul {
+    padding: 3% 0 3% 10%;
+    text-align: left;
+    font-size: 80%;
+}
+
+.SystemBlockGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 2rem;
+    margin: 5%;
+}
+
+#SystemGrid .SystemBlockGrid p {
+    text-align: left;
+    margin: 0;
+}
+
+.SystemBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 251, 251);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 1em;
+    padding: 10%;
+
+    color: black;
+    border: none;
+    margin: 1% 0;
+    border-radius: 1em;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(86, 86, 86, 0.15);
+}
+
+.SystemBlock:hover {
+    box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.1);
+}
+
+.SystemBlock .whiteButton {
+    text-align: left;
+    margin-top: auto;
+}
+/*------------Strategy-------------*/
+
+#strategyGrid {
+    margin: 0 20% 2% 20%;
+}
+
+#strategyGrid h2, p{
+    text-align: center;
+}
+#strategyGrid .whiteButton {
+    text-align: center;
+}
+
+#strategyGrid .whiteButton  button {
+    margin-top:3%;
+}
+
+/*------------About-------------*/
+#AboutGrid {
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+}
+#AboutGrid p{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#AboutGrid .whiteButton {
+    text-align: center;
+}
+
+#AboutGrid .whiteButton  button {
+    margin:3% 0;
+}
+
 /*------------Contact-------------*/
+
+#Contact {
+    margin-top: 0;
+}
 
 #ContactMain {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 5%;
+    margin: 0 20%;
+}
+#ContactMain p {
+    text-align: justify;
 }
 
 form {
@@ -259,9 +515,7 @@ form button:hover {
 
 /*------------Product-------------*/
 .productRow {
-    display:grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
+    margin: 0 20%;
 }
 
 .productSquare {
@@ -279,8 +533,21 @@ form button:hover {
     box-shadow: 2px 2px 5px 2px rgba(86, 86, 86, 0.1);
 }
 
+.productSquare h3, .productSquare p {
+        text-align: left;
+}
+
+.productSquare p{
+    text-align: justify;
+}
+
 .productDetail {
+    margin: 0 20%;
     text-align: left;
+}
+
+.productDetail p{
+    text-align: justify;
 }
 
 .productDetail img, video {
@@ -300,7 +567,10 @@ form button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 5% 0;
+    margin: 0 20%;
+}
+.aboutMe p {
+    text-align: justify;
 }
 .tab-buttons {
     display: flex;
@@ -402,29 +672,17 @@ form button:hover {
     
 /*--------Responsive Design-------*/
 @media (max-width: 600px) {
-    body {
-        margin: 2% 10%;
-    }
     h1, h2, h3, h4 {
         text-align: center;
-        font-size: 100%;
         margin: 5% 0;
         padding: 0;
-    }
-    p, ul{
-        font-size: 70%;
-    }
-    section {
-        margin: 5% 0;
-    }
-    .Intro {
-        font-size: 143%;
     }
     .NavbarGrid {
         position: relative;
         grid-template-columns: 1fr auto;
         align-items: center;
         z-index: 9999;
+        margin: 2% 5%;
     }
     .menu-toggle {
         display: block;
@@ -452,51 +710,197 @@ form button:hover {
         width: 100%;
         text-align: left;
     }
+    /*------------Home----------------*/
+    p, li {
+        font-size: 90%;
+    }
     #HomeGrid {
         grid-template-columns: 1fr;
-        margin-top:10%;
+        margin: 0 5%;
         gap: 5%;
-    }
-    #HomeGrid h1 {
-        font-size: 200%;
     }
     #HomeGrid img {
         width: 50%;
         display: block;
         margin: 0 auto 10%;
     }
-    .SocialMediaButton {
+    #HomeGrid h1 {
+        font-size: 160%;
+    }
+    #HomeGrid h3 {
         text-align: center;
     }
-    .GetInTouch button {
-        width: 60%;
-        margin: 10% auto 0 auto;
-        display: block;
+    #HomeButtonGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0;
     }
-    .GetInTouch a {
-    text-decoration: none;
+    .blackButton button,
+    .whiteButton button {
+        margin-top: 10%;
+    }
+    
+    /*------------Position-------------*/
+    #PositionGrid h1{
+        font-size: 150%;
+        margin: 0 5%;
+    }
+
+    #PositionBlockGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin: 5%;
+    }
+    .PositionBlock {
+        margin: 0;
+        padding: 5%;
+    }
+    .PositionBlock h3 {
+        font-size: 120%;
+    }
+
+    /*------------OneClass-------------*/
+    #OneClassGrid {
+        text-align: center;
+        margin: 0;
+    }
+
+    #OneClassGrid h3,h4, h5 {
+        text-align: center;
+        margin: 2% 5%;
+    }
+
+    #OneClassGrid p{
+        text-align: center;
+        padding: 0;
+        margin: 2% 5%;
+    }
+
+    #OneClassGrid ul{
+        font-size: 85%;
+        padding: 3%  10%;
+    }
+
+    #OneClassGrid button {
+        margin: 0 0 5% 0;
+    }
+
+    .OneClassDetail {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /*------------SuppurtingExperience-------------*/
+    #SuppurtingGrid h2 {
+        font-size: 120%;
+        margin: 5%;
+        
+    }
+    .SupportingBlockGrid {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin: 5% 10%;
+    }
+
+    .SupportingBlock {
+        background-color: rgb(251, 251, 251);
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 1em;
+        padding: 10%;
+        text-align: center;
+    }
+
+    /*------------System-------------*/
+
+    #SystemGrid {
+        margin: 0 5%;
+    }
+
+    #SystemGrid h2 {
+        font-size: 120%;
+    }
+
+    .SystemBlockGrid {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin: 5%;
+    }
+    .SystemBlock {
+        text-align: center;
+    }
+
+    .SystemBlock h4 {
+        margin: 2% 0;
+    }
+
+    .SystemBlock .whiteButton {
+        text-align: center;
+    }
+    /*------------Strategy-------------*/
+
+    #strategyGrid {
+        margin: 0 5%;
+    }
+
+    #strategyGrid h2, p{
+        margin: 2% 5%;
+    }
+
+    #strategyGrid .whiteButton  button {
+        margin-bottom:5%;
+    }
+
+    /*------------About-------------*/
+    #AboutGrid p {
+        margin: 5% 10% 0 10%;
+    }
+    #AboutGrid .whiteButton  button {
+        margin-bottom:5%;
+    }
+    footer {
+        font-size: 80%;
     }
     #ContactMain {
         grid-template-columns: 1fr;
         margin-bottom: 3rem;
+        margin: 0 5%;
+    }
+
+    #ContactMain p {
+        margin: 0;
     }
     form {
     margin-bottom: 2rem;
-}
+    }
     form button {
         width: 60%;
     }
+    .productRow {
+        margin:0;
+    }
+    .productRow p {
+        margin: 0;
+    }
     .productSquare {
         padding: 5%;
-        margin: 3% 0;
     }
-    .productSquare h3, .productSquare p {
-        text-align: left;
+    .Intro {
+        margin: 0 5%;
+    }
+    .productDetail {
+        margin: 0;
+    }
+    .productDetail ul {
+        margin: 0 5%;
     }
     .aboutMe {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        margin: 0;
     }
     .tab-buttons {
         justify-content: center;
@@ -511,15 +915,23 @@ form button:hover {
     }
     #map {
         height: 15em;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .bookShelf {
         gap: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .bookShelf img {    
         height: 10em;          
     }
     .bookShelf :first-child {
         display: none;
+    }
+    #running {
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .carousel-slide {   
         width: 50%;
@@ -529,34 +941,26 @@ form button:hover {
     .tebleTennis {
         display: grid;
         grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .tebleTennis img {
-        height: 10em;                
+        height: 10em;              
     }
     .tebleTennis :first-child {
         display: none;
     }
 }
 @media (min-width: 601px) and (max-width: 1100px) {
-    body {
-        margin: 2% 10%;
-    }
-    h1, h2, h3, h4 {
-        font-size: 100%;
-        margin: 3% 0;
-        padding: 0;
-    }
-    p, ul{
-        font-size: 90%;
-    }
-    .Intro {
-        font-size: 200%;
+    p, li {
+        font-size: 95%;
     }
     .NavbarGrid {
         position: relative;
         grid-template-columns: 1fr auto;
         align-items: center;
         z-index: 9999;
+        margin: 2% 10%;
     }
     .menu-toggle {
         display: block;
@@ -587,17 +991,41 @@ form button:hover {
     }
     #HomeGrid {
         grid-template-columns: 3fr 1fr;
-        margin-top:10%;
+        margin: 0 10%;
         gap: 5%;
+    }
+    #HomeGrid h3 {
+        font-size: 90%;
     }
     #HomeGrid img {
         display: grid;
         justify-content: center;
         align-items: center;
     }
-    .GetInTouch button {
-        width: 30%;
-        margin: 5% 0 0 0;
+    #HomeButtonGrid {
+        margin: 0 10%;
+    }
+    #HomeButtonGrid button {
+        margin: 5% 0;
+    }
+    #PositionGrid {
+        margin: 3% 5%;
+    }
+    #PositionGrid h1{
+        font-size: 180%;
+        margin: 3% 5%;
+    }
+    #PositionBlockGrid {
+        margin: 3% 5%;
+    }
+    #OneClassGrid h2 {
+        margin: 2% 10%;
+    }
+    footer {
+        font-size: 90%;
+    }
+    #ContactMain {
+        margin: 0 10%;
     }
     .IconStyle_2_1 p {
         font-size: 80%;
@@ -605,12 +1033,19 @@ form button:hover {
     form button {
         width: 60%;
     }
-    .productSquare {
-        padding: 4%;
-        margin: 2% 0;
+    .productRow {
+        margin: 0;
     }
-    .productSquare h3, .productSquare p {
-        text-align: left;
+    .productSquare {
+        width: 80%;
+        padding: 4%;
+        margin: 0 10% 3% 10%;
+    }
+    .Intro {
+        margin: 0 10%;
+    }
+    .productDetail {
+        margin: 0 10%;
     }
     .aboutMe {
         display: grid;
