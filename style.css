@@ -297,23 +297,28 @@ a:visited {
 
 #OneClassGrid p{
     text-align: left;
-    padding: 0 0 3% 30%;
+    margin-bottom: 5%;
 }
 
 #OneClassGrid ul{
-    padding: 0 0 3% 32%;
-}
-
-#OneClassGrid button {
-    margin: 0 0 5% 30%;
+    padding-left: 5%;
 }
 
 .OneClassDetail {
     display: grid;
-    grid-template-columns: 7fr 3fr;
-    gap: 3%;
-    margin-top: 5%;
+    grid-template-columns: 6fr 5fr;
+    margin: 5% 20%;
 }
+
+.OneClassDetail img {
+    width: 80%;
+    border-radius: 1em;
+}
+
+.OneClassDetail #banner1 {
+    display: none; 
+}
+
 
 /*------------SuppurtingExperience-------------*/
 
@@ -777,7 +782,7 @@ form button:hover {
     }
 
     #OneClassGrid p{
-        text-align: center;
+        text-align: left;
         padding: 0;
         margin: 2% 5%;
     }
@@ -794,6 +799,17 @@ form button:hover {
     .OneClassDetail {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 5% 10%;
+    }
+
+    .OneClassDetail #banner1 {
+        display: block;
+        margin: 3% auto 10% auto;
+        width: 100%;
+    }
+
+    .OneClassDetail #banner2 {
+        display: none; 
     }
 
     /*------------SuppurtingExperience-------------*/
@@ -1024,6 +1040,13 @@ form button:hover {
     }
     #OneClassGrid h2 {
         margin: 2% 10%;
+    }
+    .OneClassDetail {
+        margin: 5% 10%;
+        gap: 5%;
+    }
+    .OneClassDetail img {
+        width: 100%;
     }
     footer {
         font-size: 90%;
